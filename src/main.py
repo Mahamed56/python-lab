@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 num = float(input("Enter a number: "))
 print(f"Square: {square(num)}")
@@ -13,3 +13,5 @@ else:
     print(f"{int(num)} is odd")
 
 print(f"{num}C is {celsius_to_fahrenheit(num)}F")
+
+print(greet("Mahamed"))
